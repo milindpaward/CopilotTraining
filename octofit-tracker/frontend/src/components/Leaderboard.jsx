@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { fetchCollection } from '../lib/api';
 
+// Codespaces endpoint pattern: -8000.app.github.dev/api/leaderboard
+
 function Leaderboard() {
   const [state, setState] = useState({ loading: true, error: '', items: [], total: 0, baseUrl: '' });
 
